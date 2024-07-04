@@ -1,0 +1,7 @@
+sum = int(input())
+current_sum = 0
+i = 0
+while current_sum < sum:
+    i += 1
+    current_sum += i
+print(i)
