@@ -1,0 +1,6 @@
+while (True):
+    word = input()
+    if word == 'q':
+        print('q')
+        break
+    print(word)
