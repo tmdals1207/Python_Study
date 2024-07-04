@@ -1,0 +1,7 @@
+n = int(input())
+while (True):
+    if(n != 0):
+        print(n)
+    else:
+        break
+    n = n - 1
