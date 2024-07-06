@@ -1,0 +1,12 @@
+d = []
+for _ in range(19):
+    d.append(list(map(int, input().split())))
+cnt = int(input())
+for _ in range(cnt):
+    x, y = map(int, input().split())
+    for j in range(19):
+        d[x-1][j] = 1 - d[x-1][j]
+    for j in range(19):
+        d[j][y-1] = 1 - d[j][y-1]
+for row in d:
+    print(' '.join(map(str, row)))
