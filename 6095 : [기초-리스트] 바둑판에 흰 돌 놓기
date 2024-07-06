@@ -1,0 +1,7 @@
+cnt = int(input())
+d = [[0]*19 for _ in range(19)]
+for i in range(cnt):
+    pos = list(map(int, input().split()))
+    d[pos[0] - 1] [pos[1] - 1] = 1
+for row in d:
+    print(' '.join(map(str, row)))
