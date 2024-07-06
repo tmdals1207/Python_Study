@@ -1,0 +1,9 @@
+limit = int(input())
+num = 0
+total = 0
+while(True):
+    total += num
+    num += 1
+    if(total >= limit):
+        print(total)
+        break
