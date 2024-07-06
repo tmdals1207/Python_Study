@@ -1,0 +1,5 @@
+cnt = int(input())
+arr = []
+num = input().split()
+for i in range(cnt):
+  print(num[(cnt - 1) - i], end = ' ')
