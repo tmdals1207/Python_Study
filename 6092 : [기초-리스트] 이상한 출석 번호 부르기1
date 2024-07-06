@@ -1,0 +1,11 @@
+cnt = int(input())
+arr = []
+for i in range(23):
+  arr.append(0)
+num = []
+num = input().split()
+for i in range(cnt):
+  a = int(num[i]) - 1
+  arr[a] += 1
+for i in range(23):
+    print(arr[i],end=' ')
