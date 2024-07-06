@@ -1,0 +1,11 @@
+import sys
+
+cnt = int(input())
+num = input().split()
+for i in range(cnt):
+    num[i] = int(num[i])
+min = sys.maxsize
+for i in range(cnt):
+    if(min > num[i]):
+        min = num[i]
+print(min)
