@@ -1,0 +1,18 @@
+board = []
+for _ in range(10):
+    row = list(map(int, input().split()))
+    board.append(row)
+x, y = 1, 1
+while True:
+    if board[x][y] == 2:
+        board[x][y] = 9
+        break
+    board[x][y] = 9
+    if y + 1 < 10 and board[x][y + 1] != 1:
+        y += 1
+    elif x + 1 < 10 and board[x + 1][y] != 1:
+        x += 1
+    else:
+        break
+for row in board:
+    print(' '.join(map(str, row)))
